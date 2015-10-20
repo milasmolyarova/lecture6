@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ul = document.createElement('ul');;
+        var fragment = document.createDocumentFragment();
+        var li = document.createElement('li');
+        for (var i = 1; i <= 100; i++)
+          {
+            var li = document.createElement('li');
+            li.innerHTML = ("<strong>This is item "+i);
+            ul.appendChild(li);
+          }
+        fragment.appendChild(ul);
+        document.body.appendChild(fragment);
+    </script>    
+</body>
+</html>

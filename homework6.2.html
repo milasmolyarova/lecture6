@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul
+        {
+            display: inline-block;
+            list-style: none;
+            border: 1px solid red;
+            padding: 10px 15px;
+        }
+        li
+        {
+            font: 14px "Calibri", sans-serif;
+            color: red;
+            margin-bottom: 5px;
+        }
+    </style>
+   
+    <script>       
+    var ul = document.createElement('ul');
+    document.body.appendChild(ul);
+    for (var i = 1; i <= 100; i++) {
+        var li = document.createElement('li');
+        li.appendChild(document.createTextNode("Item "+i));
+        ul.appendChild(li);
+    }
+    </script>         
+       
+</body>
+</html>

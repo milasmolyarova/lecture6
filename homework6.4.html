@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    var ul = document.createElement('ul');
+          document.body.appendChild(ul);
+          for (var i = 1; i <= 100; i++)
+          {
+            var li = document.createElement('li');
+            li.innerHTML = (i);
+            ul.appendChild(li);
+          }
+  var li5 = ul.children[2];
+  li5.insertAdjacentHTML("beforeBegin", "<li>3</li><li>4</li>");
+  var li6 = ul.children[101];  
+  li6.insertAdjacentHTML("afterEnd", "<li>101</li><li>102</li><li>103</li><li>104</li>");
+</script>    
+</body>
+</html>

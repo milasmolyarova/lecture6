@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ul = document.createElement('ul');
+          document.body.appendChild(ul);
+        var empty = [];
+        for (var i = 1; i <= 100; i++)
+          {
+              empty.push('<li>'+i+'</li>');}
+        var a = empty.join(" ");
+        ul.innerHTML = a;
+    </script>
+</body>
+</html>
